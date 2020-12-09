@@ -16,7 +16,7 @@ body {
     align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4,100px);
-    grid-template-rows: repeat(6,100px);
+    grid-template-rows: minmax(120px,auto) repeat(6,100px);
     grid-gap: 3px
 
 }
@@ -30,7 +30,9 @@ body {
     justify-content: space-around;
     align-items: flex-end;
     margin-bottom: 5px;
-    border-top-right-radius: 15px;
+    border-top-right-radius: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .upper {
@@ -71,8 +73,12 @@ body {
 
 .equal {
     background: rgba(212,75,0,.8);
+    border-bottom-right-radius: 20px;
 }
 
 .equal:hover {
     background: rgba(212,75,0,.6);
 }
+
+
+/*-----------------------------------*/

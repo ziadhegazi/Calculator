@@ -9,7 +9,7 @@
     "lite": "lite-server"
   },
   "author": "Ziad Hegazi",
-  "license": "",
+  "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0"
   },
