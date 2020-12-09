@@ -1,12 +1,13 @@
 *,*::before, *::after   {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 body {
     background: radial-gradient(#00d4ff,#090979);
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -14,9 +15,9 @@ body {
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
+    height: 100%;
     grid-template-columns: repeat(4,100px);
-    grid-template-rows: minmax(120px,auto) repeat(6,100px);
+    grid-template-rows: minmax(120px,auto) repeat(5,100px);
     grid-gap: 3px
 
 }
@@ -82,3 +83,59 @@ body {
 
 
 /*-----------------------------------*/
+.main-logo {
+    border-radius: 10px;
+}
+
+.navbar-dark {
+    background-color:  rgba(0,0,0,.85);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.row-content {
+    margin: opx auto;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer {
+    background-color: rgba(0,0,0,.85);
+    min-height: 70px;
+
+    
+}
+
+.box {
+    margin: 0px 0px;
+    padding: 15px 10px;
+    display: grid;
+    grid-template-rows: minmax(35px,auto) repeat(1, 35px);
+    /* grid-template-columns: minmax(200px,auto) repeat(1,200px); */
+    width: 100%;
+    height: 100%;
+    border: solid;
+    justify-content: end;
+}
+
+.done-by {
+    color: wheat;
+    font-weight: 700;
+    font-size: 25px;
+    border: solid green;
+}
+
+#name {
+    /* border: solid red; */
+    color: rgba(212,75,0,.6);
+    font-weight: 500;
+    font-size: larger;
+}
+
+#email {
+    /* border: solid orange; */
+    color: rgba(212,75,0,.6);
+    font-weight: 500;
+    font-size: larger;
+}

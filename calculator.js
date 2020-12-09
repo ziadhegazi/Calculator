@@ -77,13 +77,13 @@ class Calculator{
         this.dataLower = value;
     }
 }
+
 // Instantiate Object calculator
 const calculator = new Calculator(dataUpperText, dataLowerText)
 
 // Adding each number clicked on to the dataLower
 
 numbers.forEach(number => { 
-    // console.log(button.innerText)
     number.addEventListener("click", () => {
         calculator.appendNumber(number.innerText)
         calculator.updateDisplay()
